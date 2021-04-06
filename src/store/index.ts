@@ -9,9 +9,9 @@ const reducer = {
   tabs: tabsReducer
 }
 
-export type State = StateFromReducersMapObject<typeof reducer>
+export type RootState = StateFromReducersMapObject<typeof reducer>
 
-export const initStore = (preloadedState?: DeepPartial<State>) => configureStore({
+export const initStore = (preloadedState?: DeepPartial<RootState>) => configureStore({
   reducer: reducer,
   preloadedState: preloadedState,
 
@@ -27,5 +27,4 @@ export const initStore = (preloadedState?: DeepPartial<State>) => configureStore
 })
 
 export const store = initStore()
-export type RootState = ReturnType<typeof store.getState>
 export type AppDispatch = typeof store.dispatch
