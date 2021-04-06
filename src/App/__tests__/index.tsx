@@ -1,9 +1,8 @@
 import { Provider } from "react-redux";
 import { render, fireEvent } from "@testing-library/react";
 import { App } from "../index";
-import { store, initStore } from "store";
+import { store } from "store";
 import { sleep } from "common/tests";
-// import { sleep } from "common/tests";
 
 describe("App component", () => {
   it("should render without crashes", () => {

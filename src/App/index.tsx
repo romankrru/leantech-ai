@@ -1,6 +1,6 @@
+import styles from "./styles/index.module.css";
 import { List } from "./List";
 import { Tabs, TabType, TabContent } from "./Tabs";
-import styles from "./styles/index.module.css";
 
 const tabs: Array<TabType> = [
   { title: "Tab #1", to: "tab-one" },
