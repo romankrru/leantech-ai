@@ -1,0 +1,36 @@
+.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-columns: auto minmax(auto, 1024px) auto;
+}
+
+.main {
+  padding: 8px;
+  widht: 100%;
+  grid-column-start: 2;
+}
+
+.header {
+  grid-column: 1 / -1;
+  padding: 8px;
+  background-color: #ffffe8;
+}
+
+@media (min-width: 640px) {
+  .header {
+    background-color: #fcfc00;
+  }
+}
+
+.footer {
+  grid-column: 1 / -1;
+  padding: 8px;
+  background-color: #ffa8de;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    background-color: #22e051;
+  }
+}

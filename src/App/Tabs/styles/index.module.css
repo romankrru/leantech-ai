@@ -1,0 +1,32 @@
+.tabs {
+  display: grid;
+  row-gap: 8px;
+
+}
+
+.tabsLinks {
+  display: grid;
+  justify-content: flex-start;
+  grid-auto-flow: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabLink button {
+  cursor: pointer;
+  background-color: #fff;
+  padding: 4px 8px;
+  outline: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 2px solid black;
+}
+
+.tabLinkActive button {
+  border-bottom: none;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}

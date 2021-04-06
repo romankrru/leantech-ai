@@ -1,0 +1,11 @@
+.listContainer {
+  display: grid;
+  gap: 16px;
+}
+
+.listControls {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 8px;
+  justify-content: flex-start;
+}
